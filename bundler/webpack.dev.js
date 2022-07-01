@@ -9,7 +9,7 @@ module.exports = merge(config, {
    devServer: {
       writeToDisk: true,
       host: '0.0.0.0',
-      contentBase: './src',
+      contentBase: './public',
       open: true,
       https: false,
       useLocalIp: true
