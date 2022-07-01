@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <base href="/" />
+
+    <title>Ayana</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant&family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body class="is-loading">
+    <main id="container">
+      <header class="header">
+        <figure class="header-logo">
+          <img src="images/logo.svg" alt="Ayana" />
+        </figure>
+      </header>
+      <div class="loading"></div>
+      <div id="content" class="content" data-scroll-container>
+
+        <section class="slider-container" data-scroll-section>
+          <div
+            id="slider"
+            class="slider-slides"
+            data-images='[
+                     "/images/img1.jpg",
+                     "/images/img4.jpg",
+                     "/images/img3.jpg",
+                     "/images/img6.jpg",
+                     "/images/img5.jpg",
+                     "/images/img7.jpg",
+                     "/images/img8.jpg"
+                  ]'
+            data-displacement=""
+          >
+            <div
+              class="slider-wrapper parallax"
+              data-scroll
+              data-scroll-speed="-2"
+            >
+              <div class="slider animscale"></div>
+            </div>
+            <div class="slider-title">
+               <div class="animin">
+                  <h1>A Place of Refuge</h1>
+               </div>
+            </div>
+            <div class="slides-item">
+               <div class="animin">
+                   <p style="transition-delay: .55s">Rock Bar, Ayana Bali</p>
+               </div>
+            </div>
+            <div class="slides-item">
+              <p>Mesa Bar and Lounge, Ayana Komodo</p>
+            </div>
+            <div class="slides-item">
+              <p>Rasa Restaurant, Ayana Jakarta</p>
+            </div>
+            <div class="slides-item">
+              <p>The Villas, Ayana Bali</p>
+            </div>
+            <div class="slides-item">
+              <p>Full Ocean View Suite, Ayana Komodo</p>
+            </div>
+            <div class="slides-item">
+              <p>Story: Our Commitment to Nature</p>
+            </div>
+            <div class="slides-item">
+              <p>Story: The Design of Ayana</p>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <div class="animin">
+               <div  style="transition-delay: .5s">
+                  <div class="nav-prev">
+                  <img
+                     src="/images/prev.svg"
+                     class="next-button next-prev-button"
+                  />
+                  </div>
+                  <div class="nav-count">
+                  <span class="current">01</span>
+                  <i class="sep">/</i>
+                  <span class="total">07</span>
+                  </div>
+                  <div class="nav-next">
+                  <img
+                     src="/images/next.svg"
+                     class="next-button next-prev-button"
+                  />
+                  </div>
+               </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid-container" data-scroll-section>
+          <div class="card">
+            <figure class="card-img">
+              <div class="animfade" style="transition-delay: 0.6s">
+                <img
+                  src="/images/img_bali.jpg"
+                  alt="Bali"
+                  class="parallax small"
+                  data-scroll
+                  data-scroll-speed="-1"
+                />
+              </div>
+            </figure>
+            <div class="card_overlay"></div>
+            <div class="card_content">
+              <h2 class="card-title">Bali</h2>
+              <p>
+                The flagship AYANA luxury property. A sanctuary of nature,
+                culture and wellbeing, where the forest meets the sea.
+              </p>
+              <a><img src="/images/next.svg" alt="" /></a>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="card-img">
+              <div class="animfade" style="transition-delay: 0.7s">
+                <img
+                  src="/images/img_komodo3.jpg"
+                  alt="Komodo"
+                  class="parallax small"
+                  data-scroll
+                  data-scroll-speed="-1"
+                />
+              </div>
+            </figure>
+            <div class="card_overlay"></div>
+            <div class="card_content">
+              <h2 class="card-title">Komodo</h2>
+              <p>
+                Modern and distinctive 5-star resort in the heart of Indonesia's
+                most dramatic landscape. Where luxury and adventure combine to
+                make indelible memories.
+              </p>
+              <a><img src="/images/next.svg" /></a>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="card-img">
+              <div class="animfade" style="transition-delay: 0.8s">
+                <img
+                  src="/images/img_jakarta.jpg"
+                  alt="Jakarta"
+                  class="parallax small"
+                  data-scroll
+                  data-scroll-speed="-1"
+                />
+              </div>
+            </figure>
+            <div class="card_overlay"></div>
+            <div class="card_content">
+              <h2 class="card-title">Jakarta</h2>
+              <p>
+                Your sanctuary in the heart of Jakarta, offering unique
+                signature experiences and authentic Indonesian hospitality.
+              </p>
+              <a><img src="/images/next.svg" /></a>
+            </div>
+          </div>
+          <div class="card">
+            <figure class="card-img">
+              <div class="animfade" style="transition-delay: 0.9s">
+                <img
+                  src="/images/img_cruise.jpg"
+                  alt="Cruise"
+                  class="parallax small"
+                  data-scroll
+                  data-scroll-speed="-1"
+                />
+              </div>
+            </figure>
+            <div class="card_overlay"></div>
+            <div class="card_content">
+              <h2 class="card-title">Cruise</h2>
+              <p>
+                Bespoke maritime excursions where the sky meets the sea and your
+                wish is our command.
+              </p>
+              <a><img src="/images/next.svg" /></a>
+            </div>
+          </div>
+        </section>
+        <footer class="footer" data-scroll-section>
+          <div class="footer-wrapper">
+            © 2022 AYANA Estate. All Rights Reserved
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+  <script src="main.js"></script>
+</html>

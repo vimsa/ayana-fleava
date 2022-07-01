@@ -1,0 +1,16 @@
+@use "sass:math";
+
+@function vw($sizeInPx) {
+   $result: calc(#{$sizeInPx} / var(--baseSize) * var(--scaler) * 100vw);
+   @return $result;
+}
+
+@function z($name) {
+   @if index($z-indexes, $name) {
+      @return (length($z-indexes) - index($z-indexes, $name)) + 5;
+   } @else {
+      @warn 'There is no item "#{$name}" in this list; Choose one of: #{$z-indexes}';
+
+      @return null;
+   }
+}

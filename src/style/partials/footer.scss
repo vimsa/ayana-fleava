@@ -1,0 +1,17 @@
+.footer {
+   background-color: rgb(35, 31, 32);
+  // background-color: #000;
+
+   &-wrapper {
+      padding: vw(60) vw(30);
+      color: white;
+      text-align: center;
+      line-height: vw(30);
+      font-family: $f-mulish;
+      font-size: vw(16);
+
+      @include media("<=tablet") {
+         font-size: vw(18);
+      }
+   }
+}

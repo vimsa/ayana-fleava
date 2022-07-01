@@ -1,0 +1,35 @@
+$breakpoints: (
+   "phone": $r-phone + 0px,
+   "tablet": $r-tablet + 0px,
+   "desktop": $r-desktop + 0px,
+   "bigDesktop": $r-bigDesktop + 0px,
+) !default;
+
+@import "../../../node_modules/include-media/dist/include-media";
+
+:root {
+   @include media(">bigDesktop") {
+      --baseSize: #{$r-bigDesktop};
+      --scaler: 1;
+   }
+
+   @include media("<=bigDesktop") {
+      --baseSize: #{$r-bigDesktop};
+      --scaler: 1;
+   }
+
+   @include media("<=desktop") {
+      --baseSize: #{$r-desktop};
+      --scaler: 1;
+   }
+
+   @include media("<tablet") {
+      --baseSize: #{$r-tablet};
+      --scaler: 1;
+   }
+
+   @include media("<phone") {
+      --baseSize: #{$r-phone};
+      --scaler: 1;
+   }
+}
