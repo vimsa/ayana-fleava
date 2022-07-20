@@ -19,7 +19,7 @@ class App {
       this.vertex = vertexShaders
       this.fragment = fragmentShaders
 
-      this.duration = 1
+      this.duration = 1.5
       this.uniforms = {
          radius: {value: 0.9, type:'f', min:0.1, max:2},
          width: {value: 0.35, type:'f', min:0., max:1},
@@ -100,7 +100,7 @@ class App {
       this.locomotiveScroll.on("scroll", function (t, e) {
          hideShowHeader(t)
          if ( isMobile(window.navigator.userAgent).any) {
-            throttle(parallax(t), 1)
+            throttle(parallax(t), 14)
          }
        })
 

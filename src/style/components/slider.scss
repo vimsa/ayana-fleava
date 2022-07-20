@@ -4,7 +4,7 @@
    overflow: hidden;
 
    @include media("<=phone") {
-      // height: calc(100vh - 70px);
+      //height: calc(100vh - 70px);
       min-height: -webkit-fill-available;
    }
 }
@@ -46,19 +46,17 @@
    transform: translateX(-50%);
    text-align: center;
    color: white;
-
    @include media("<=phone") {
       width: 100%;
       bottom: vw(200);
    }
-
-   & h1 {
+   &  h1 {
       font-size: 2.8vw;
       line-height: 1;
       text-transform: uppercase;
       font-style: normal;
       font-weight: 400;
-      margin-bottom: 0;
+      margin-bottom:0;
       margin-top: 0;
 
       @include media("<=tablet") {
@@ -154,10 +152,11 @@
    bottom: vw(100);
    left: 50%;
    transform: translateX(-50%);
-
+   
    font-size: 1vw;
 
    & > div {
+     
       & > div {
          display: flex;
          align-items: center;
@@ -212,15 +211,15 @@
 
 .loadOverlay {
    position: fixed;
-   width: 100vw;
+   width:100vw;
    height: 100vh;
-   left: 0;
-   top: 0;
+   left:0;
+   top:0;
    z-index: 10;
    pointer-events: none;
-
+   
    @include media("<=phone") {
-      width: 200vw;
+      width:200vw;
       left: -50%;
    }
 }

@@ -18,26 +18,26 @@ html {
    transform-style: preserve-3d;
 }
 
-html.has-scroll-smooth {
-   overflow: hidden;
-   position: fixed;
-   left: 0;
-   right: 0;
-   top: 0;
-   bottom: 0;
+html.has-scroll-smooth 
+{
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;  
 }
+
+a {
+   text-decoration: none;
+}
+
 
 body {
    margin: 0;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
    font-family: $f-mulish;
-   overflow-x: hidden;
-}
-
-body,
-html {
-   overflow-x: hidden;
 }
 
 h1,
@@ -52,46 +52,54 @@ h3 {
    z-index: -1;
 }
 
+
 .loading {
    width: 100vw;
    height: 100vh;
    background: #000;
    position: fixed;
-   top: 0;
-   left: 0;
+   top:0;
+   left:0;
    z-index: 10;
-   transition: opacity 0.5s ease;
+   transition: opacity .5s ease;
    transform-origin: top;
 }
 
 body.ready {
    .loading {
-      opacity: 0;
+      opacity:0;
       pointer-events: none;
+      
    }
 }
 
+body,html {
+   overflow-x: hidden;
+}
+
+
 .animscale {
-   opacity: 0;
+   opacity:0;
    transform: scale(1.1);
    transition: transform 2s cubic-bezier(0.1, 0, 0.07, 1), opacity 1s linear;
 }
 
 .animfade {
-   opacity: 0;
+   opacity:0;
    transition: opacity 2s linear;
    position: relative;
    width: 100%;
-   height: 100%;
+   height:100%;
+
 }
 
 .animin {
    overflow: hidden;
 
    & > * {
-      opacity: 0;
+      opacity:0;
       transform: translateY(5vw);
-      transition: transform 1.2s cubic-bezier(0.1, 1, 0.43, 1), opacity 1s linear;
+      transition: transform 1.2s cubic-bezier(.1,1,.43,1), opacity 1s linear;
       transition-delay: 0.5s;
       @include media("<=phone") {
          transform: translateY(0);
@@ -101,7 +109,7 @@ body.ready {
 
 body.ready {
    .animscale {
-      opacity: 1;
+      opacity:1;
       transform: scale(1);
    }
    .animfade {
@@ -109,8 +117,9 @@ body.ready {
    }
    .animin {
       & > * {
-         opacity: 1;
+         opacity:1;
          transform: translateY(0);
       }
    }
 }
+
